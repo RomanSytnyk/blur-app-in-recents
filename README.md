@@ -1,6 +1,9 @@
 
 # Blur App In Recents
 
+![Platform - Android and iOS](https://img.shields.io/badge/platform-android%20%26%20ios-bg)
+[![NPM Badge](https://img.shields.io/npm/v/%40roman.sytnyk%2Fblur-app-in-recents)](https://www.npmjs.com/package/%40roman.sytnyk%2Fblur-app-in-recents)
+
 A React Native module for Expo that prevents sensitive content from being visible in the app in Recents menu of iOS & Android. 
 
 Thia package can be useful for banking, finance, and other security-focused applications.
@@ -11,14 +14,20 @@ The key difference with [Expo Screen Capture](https://docs.expo.dev/versions/lat
 
 You can install this package using npm or yarn:
 
-```bash npm install @roman.sytnyk/blur-app-in-recents```
+```npm install @roman.sytnyk/blur-app-in-recents```
 
 or
 
-```bash yarn add @roman.sytnyk/blur-app-in-recents```
+```yarn add @roman.sytnyk/blur-app-in-recents```
+
+Also, don't forget make new prebuild to apply native code
+
+```npx expo prebuild```
 
 ## Usage
 ```
+import BlurAppInRecents from '@roman.sytnyk/blur-app-in-recents';
+
 React.useEffect(() => {
   BlurAppInRecents.enable();
 }, []);
