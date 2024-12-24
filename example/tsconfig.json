@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@roman.sytnyk/blur-app-in-recents": ["../src/index"],
+      "@roman.sytnyk/blur-app-in-recents/*": ["../src/*"]
+    }
+  }
+}

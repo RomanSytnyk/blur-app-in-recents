@@ -1,0 +1,17 @@
+{
+  "platforms": [
+    "apple",
+    "android"
+  ],
+  "apple": {
+    "modules": [
+      "BlurAppInRecentsModule"
+    ],
+    "appDelegateSubscribers": ["AppLifecycleDelegate"]
+  },
+  "android": {
+    "modules": [
+      "expo.modules.blurrecents.BlurAppInRecentsModule"
+    ]
+  }
+}

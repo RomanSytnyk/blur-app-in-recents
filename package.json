@@ -1,0 +1,45 @@
+{
+  "name": "@roman.sytnyk/blur-app-in-recents",
+  "version": "0.1.1",
+  "description": "Blur the app in Recents menu on iOS & Android",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "lint": "expo-module lint",
+    "test": "expo-module test",
+    "prepare": "expo-module prepare",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module",
+    "open:ios": "xed example/ios",
+    "open:android": "open -a \"Android Studio\" example/android"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "@roman.sytnyk/blur-app-in-recents",
+    "blur",
+    "recents"
+  ],
+  "repository": "https://github.com/RomanSytnyk/blur-app-in-recents",
+  "bugs": {
+    "url": "https://github.com/RomanSytnyk/blur-app-in-recents/issues"
+  },
+  "author": "Roman Sytnyk <r.sytnyk@outlook.com> (https://github.com/RomanSytnyk)",
+  "license": "MIT",
+  "homepage": "https://github.com/RomanSytnyk/blur-app-in-recents#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/react": "~18.3.12",
+    "expo-module-scripts": "^4.0.2",
+    "expo": "~52.0.0",
+    "react-native": "0.76.0"
+  },
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-native": "*"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
