@@ -1,6 +1,6 @@
 {
   "name": "@roman.sytnyk/blur-app-in-recents",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Blur the app in Recents menu on iOS & Android",
   "main": "build/index.js",
   "types": "build/index.d.ts",
