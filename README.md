@@ -6,7 +6,7 @@
 
 A React Native module for Expo that prevents sensitive content from being visible in the app in Recents menu of iOS & Android. 
 
-Thia package can be useful for banking, finance, and other security-focused applications.
+This package can be useful for banking, finance, and other security-focused applications.
 
 The key difference with [Expo Screen Capture](https://docs.expo.dev/versions/latest/sdk/screen-capture/) is that this package allows taking screenshots when the app is in the foreground, blurring content only in the background state.
 
@@ -41,15 +41,12 @@ React.useEffect(() => {
 
 ### `BlurAppInRecents`
 
-- **`enable`**: Activates the blur effect when the app goes to the Recents menu.
-- **`disable`**: Deactivates the blur effect.
+- **`enable()`**: Activates the blur effect when the app goes to the Recents menu.
+- **`disable()`**: Deactivates the blur effect.
+- **`isBlurringEnabled()`**: Returns `true` if the blur effect is currently enabled.
 
 ## Limitations
-For Android devices running below Android 13, the blur effect may not work as expected due to platform limitations. 
-
-Specifically, blurring doesn't have any effects on devices with Android versions lower than 13, where gesture navigation is enabled instead of bottom buttons. 
-
-It's a system bug, which you can find more details about on [Google's Issue Tracker](https://issuetracker.google.com/issues/123205795)
+On Android devices below Android 13 with gesture navigation enabled, the overlay may briefly flash during the recents transition due to a [known system bug](https://issuetracker.google.com/issues/123205795).
 
 ## Contributing
 
